@@ -24,3 +24,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean verify
+      
+    - name: Deploy report page to HitHub page
+      uses: peaceiris/actions-gh-page@v3
+      with:
+        github_token: ${{secret.GITHUB_TOKEN}}
+        publish_dir: ./target/cucumber-html-reports
