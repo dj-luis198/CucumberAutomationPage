@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CucumberAutomationPage</td>
+              <td>1</td>
+            <td>25 Apr 2022, 01:46</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">TestGlue.AddToCartSteps.agregaElProductoAlCarrito(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>12</td>
+              <td class="duration" data-value="475174100">0.475</td>
+              <td class="duration" data-value="475174100">0.517</td>
+              <td class="duration" data-value="5702089200">5.702</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.AddToCartSteps.deveriaMostrarUnMensajeDeConfirmacion(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1530393700">1.530</td>
+              <td class="duration" data-value="1530393700">1.799</td>
+              <td class="duration" data-value="3060787400">3.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.AddToCartSteps.deveriaMostrarUnMensajeDeError(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="699199933">0.699</td>
+              <td class="duration" data-value="699199933">0.721</td>
+              <td class="duration" data-value="2097599800">2.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.AddToCartSteps.seleccionaElProducto(java.lang.String)</td>
+              <td>12</td>
+              <td class="duration" data-value="1574306500">1.574</td>
+              <td class="duration" data-value="1574306500">3.127</td>
+              <td class="duration" data-value="18891678000">18.891</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.deberiaMostrarMiApelledoYNombre(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.deberiaMostrarUnMensajeDeErrorFirstnameIsInvalid(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="97425980">0.097</td>
+              <td class="duration" data-value="97425980">0.121</td>
+              <td class="duration" data-value="487129900">0.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.deberiaSerRedirigidoALaPaginaMyAccount()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="7942914514">7.942</td>
+              <td class="duration" data-value="7942914514">10.782</td>
+              <td class="duration" data-value="55600401600">55.600</td>
+              <td class="failed">71.43%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.ingresaDatosDeDomicilio(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="1419652433">1.419</td>
+              <td class="duration" data-value="1419652433">1.845</td>
+              <td class="duration" data-value="8517914600">8.517</td>
+              <td class="failed">83.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.ingresaLosDatosPersonales(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.ingresaLosDatosPersonales(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="956704966">0.956</td>
+              <td class="duration" data-value="956704966">1.488</td>
+              <td class="duration" data-value="5740229800">5.740</td>
+              <td class="failed">83.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.ingresa_datos_de_domicilio(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.CreateAnAccountSteps.presionaElBotonDeRegistro()</td>
+              <td>7</td>
+              <td class="duration" data-value="1066509928">1.066</td>
+              <td class="duration" data-value="1066509928">2.122</td>
+              <td class="duration" data-value="7465569500">7.465</td>
+              <td class="failed">71.43%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.Hooks.setUp()</td>
+              <td>32</td>
+              <td class="duration" data-value="1765664503">1.765</td>
+              <td class="duration" data-value="1765664503">19.706</td>
+              <td class="duration" data-value="56501264100">56.501</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>32</td>
+              <td class="duration" data-value="167649843">0.167</td>
+              <td class="duration" data-value="167649843">0.293</td>
+              <td class="duration" data-value="5364795000">5.364</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.LoginSteps.deveriaMostrarUnMensajeDeError(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="82116780">0.082</td>
+              <td class="duration" data-value="82116780">0.085</td>
+              <td class="duration" data-value="410583900">0.410</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.LoginSteps.deveriaSerRedirigidoALaPaginaMyAccount()</td>
+              <td>2</td>
+              <td class="duration" data-value="5000700">0.005</td>
+              <td class="duration" data-value="5000700">0.005</td>
+              <td class="duration" data-value="10001400">0.010</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.LoginSteps.elUsuarioEstaEnLoginPage()</td>
+              <td>14</td>
+              <td class="duration" data-value="1824901692">1.824</td>
+              <td class="duration" data-value="1824901692">2.268</td>
+              <td class="duration" data-value="25548623700">25.548</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.LoginSteps.seLogea(java.lang.String,java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="1492649754">1.492</td>
+              <td class="duration" data-value="1492649754">2.187</td>
+              <td class="duration" data-value="16419147300">16.419</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.SearchSteps.deveriaDeMostrarUnListadoDeProductosEncontrados(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="61498050">0.061</td>
+              <td class="duration" data-value="61498050">0.072</td>
+              <td class="duration" data-value="368988300">0.368</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.SearchSteps.elUsuarioEstaEnLaHomePage()</td>
+              <td>18</td>
+              <td class="duration" data-value="2197230172">2.197</td>
+              <td class="duration" data-value="2197230172">3.048</td>
+              <td class="duration" data-value="39550143100">39.550</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.SearchSteps.realizaLaBusquedaDeUnProducto(java.lang.String)</td>
+              <td>18</td>
+              <td class="duration" data-value="1506372111">1.506</td>
+              <td class="duration" data-value="1506372111">2.422</td>
+              <td class="duration" data-value="27114698000">27.114</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.VerifySummarySteps.deberiaRedirigirALaPaginaOrder()</td>
+              <td>3</td>
+              <td class="duration" data-value="4331633">0.004</td>
+              <td class="duration" data-value="4331633">0.004</td>
+              <td class="duration" data-value="12994900">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.VerifySummarySteps.elTotalDeLaCompraDeberiaSerIgualAlTotalEsperado(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="35332966">0.035</td>
+              <td class="duration" data-value="35332966">0.038</td>
+              <td class="duration" data-value="105998900">0.105</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.VerifySummarySteps.presionaEnElBotonCheckOut()</td>
+              <td>7</td>
+              <td class="duration" data-value="2394819671">2.394</td>
+              <td class="duration" data-value="2394819671">3.323</td>
+              <td class="duration" data-value="16763737700">16.763</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.esRedireccionadoALaPaginaOrderConfirmation()</td>
+              <td>4</td>
+              <td class="duration" data-value="6752300">0.006</td>
+              <td class="duration" data-value="6752300">0.007</td>
+              <td class="duration" data-value="27009200">0.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.presionaElBotonIConfirmMyOrder()</td>
+              <td>4</td>
+              <td class="duration" data-value="6055045750">6.055</td>
+              <td class="duration" data-value="6055045750">17.138</td>
+              <td class="duration" data-value="24220183000">24.220</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.presionaElBotonProceedToCheckoutDesdeAddressesPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="1689487325">1.689</td>
+              <td class="duration" data-value="1689487325">2.555</td>
+              <td class="duration" data-value="6757949300">6.757</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.presionaElBotonProceedToCheckoutDesdeOrderPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="2278860600">2.278</td>
+              <td class="duration" data-value="2278860600">3.111</td>
+              <td class="duration" data-value="9115442400">9.115</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.presionaElPotonProceedToCheckoutDesdeShippingPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="1371889300">1.371</td>
+              <td class="duration" data-value="1371889300">2.037</td>
+              <td class="duration" data-value="5487557200">5.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.seleccionaLaOpcionPayByBankWire()</td>
+              <td>2</td>
+              <td class="duration" data-value="1740230800">1.740</td>
+              <td class="duration" data-value="1740230800">2.504</td>
+              <td class="duration" data-value="3480461600">3.480</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestGlue.WayToPaySteps.seleccionaLaOpcionPayByCheck()</td>
+              <td>2</td>
+              <td class="duration" data-value="880394250">0.880</td>
+              <td class="duration" data-value="880394250">0.945</td>
+              <td class="duration" data-value="1760788500">1.760</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>32</td>
+            <td>241</td>
+            <td class="duration">1.438</td>
+            <td class="duration">56.501</td>
+            <td class="duration">5:46.583</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
