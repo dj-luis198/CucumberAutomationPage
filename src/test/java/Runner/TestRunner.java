@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		glue = "TestGlue",
 		monochrome = true,
 		plugin = {"json:target/cucumber.json"},
-		//tags = "  @pay",
+		//tags = "  @registro",
 		snippets = SnippetType.CAMELCASE)
 
 public class TestRunner {

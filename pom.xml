@@ -101,7 +101,7 @@
                                 <param>other.properties</param>
                             </classificationFiles>
                             <parallelTesting>false</parallelTesting>
-                            <checkBuildResult>true</checkBuildResult>
+                            <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
