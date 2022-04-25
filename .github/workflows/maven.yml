@@ -28,5 +28,5 @@ jobs:
     - name: Deploy report page to HitHub page
       uses: peaceiris/actions-gh-page@v3
       with:
-        github_token: ${{secret.GITHUB_TOKEN}}
+        github_token: ${{secrets.GITHUB_TOKEN}}
         publish_dir: ./target/cucumber-html-reports
