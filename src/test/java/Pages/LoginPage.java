@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.logging.Level;
+
 public class LoginPage extends Base {
 
 	public LoginPage(WebDriver driver) {
@@ -23,21 +25,28 @@ public class LoginPage extends Base {
 	}
 	
 	public Boolean verifyPage() {
+		LOGGER.log(Level.INFO,"Comprobando el titulo de la pagina");
 		if (titleLoginPage.equals(getTitle())) {
+			LOGGER.log(Level.INFO,"Comprobacion exitosa: se encuentra en la pagina "+titleLoginPage);
 			return true;
+		}else {
+			LOGGER.log(Level.SEVERE,"Comprobacion fallida: No se encuentra en la pagina "+titleLoginPage);
+			return false;
 		}
-		return false;
 	}
 
 	public void sendEmail(String email) {
+		LOGGER.log(Level.INFO,"Ingresando email: "+email);
 		sendKeys(emailLocator, email);
 	}
 
 	public void sendPasswd(String passwd) {
+		LOGGER.log(Level.INFO,"Ingresando passwd: "+passwd);
 		sendKeys(passwdLocator, passwd);
 	}
 
 	public void clicButtonSignIn() {
+		LOGGER.log(Level.INFO,"Clic en boton Sign In");
 		clic(signInButtonLocator);
 	}
 
@@ -58,10 +67,12 @@ public class LoginPage extends Base {
 	}
 
 	public void emailAccount(String email) {
+		LOGGER.log(Level.INFO,"Ingresando email: "+email);
 		sendKeys(emailAccountLocator, email);
 	}
 
 	public void clicButtonCreate() {
+		LOGGER.log(Level.INFO,"Clic en boton Create Account");
 		clic(btnAccountLocator);
 	}
 

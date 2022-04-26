@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.logging.Level;
+
 public class BankWirePaymentPage extends Base {
 	private String btnSubmitLocator = "//*[@class=\"button btn btn-default button-medium\"]";
 
@@ -10,6 +12,7 @@ public class BankWirePaymentPage extends Base {
 	}
 
 	public void clicIConfirmMyOrder() {
+		LOGGER.log(Level.INFO,"Clic en boton Confirm My Order");
 		clic(btnSubmitLocator);
 	}
 

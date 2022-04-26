@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.logging.Level;
+
 public class CreateAnAccountPage extends Base {
 
 	private String radioButtonGenderLocator = "id_gender";
@@ -35,6 +37,7 @@ public class CreateAnAccountPage extends Base {
 	}
 
 	public Boolean verifyErrorCreateAccount(String error) throws InterruptedException {
+		LOGGER.log(Level.INFO,"Comprobando si hay errores");
 		if (isDisplayed(alertErrorLocator)) {
 			String text = getText(alertErrorLocator).replaceAll("\\r|\\n", "").replaceAll(" ", "");
 			String errorExp = error.replaceAll("\\r|\\n", "").replaceAll(" ", "");
@@ -54,6 +57,7 @@ public class CreateAnAccountPage extends Base {
 	}
 
 	public void selectGender(String gender) {
+		LOGGER.log(Level.INFO,"Seleccionando genero: "+gender);
 		String genderMr = "Mr.";
 		if (gender.equals(genderMr)) {
 			clicRadioButton(radioButtonGenderLocator, "1");
@@ -63,45 +67,53 @@ public class CreateAnAccountPage extends Base {
 	}
 
 	public void sendFirstName(String firstName) {
+		LOGGER.log(Level.INFO,"Ingresando nombre: "+firstName);
 		sendKeys(firstNameLocator, firstName);
 	}
 
 	public void sendLastName(String lastName) {
+		LOGGER.log(Level.INFO,"Ingresando apellido: "+lastName);
 		sendKeys(lastNameLocator, lastName);
 	}
 
 	public void verifyEmail(String email) {
+		LOGGER.log(Level.INFO,"Comprobando email: "+email);
 		if (!verifyAttributeValue(emailLocator, email)) {
 			throw new Error("La cuenta ingesada no es igual a la mostrada");
 		} else
-			System.out.println("Los email son iguales");
+			LOGGER.log(Level.INFO,"Los emails coinciden");
 	}
 
 	public void verifyFirstName(String firstName) {
+		LOGGER.log(Level.INFO,"Comprobando nombre: "+firstName);
 		if (!verifyAttributeValue(firstNameVerifyLocator, firstName)) {
 			throw new Error("El nombre ingesado no es igual a la mostrado");
 		} else
-			System.out.println("Los nombres son iguales");
+			LOGGER.log(Level.INFO,"Los nombres coinciden");
 	}
 
 	public void verifyLastName(String lastName) {
+		LOGGER.log(Level.INFO,"Comprobando apellido: "+lastName);
 		if (!verifyAttributeValue(lastNameVerifyLocator, lastName)) {
 			throw new Error("El apellido ingesado no es igual a la mostrado");
 		} else
-			System.out.println("Los apellidos son iguales");
+			LOGGER.log(Level.INFO,"Los apellidos coinciden");
 	}
 
 	public void sendPasswd(String passwd) {
+		LOGGER.log(Level.INFO,"Ingresando passwd: "+passwd);
 		sendKeys(passwdLocator, passwd);
 	}
 
 	public void selectDateOfBirth(String day, String month, String year) {
+		LOGGER.log(Level.INFO,"Ingresando fecha de nacimiento: "+day+"-"+month+"-"+year);
 		selectByValue(daysLocator, day);
 		selectByValue(monthsLocator, month);
 		selectByValue(yearsLocator, year);
 	}
 
 	public void selectCheckboxs(String check1, String check2) {
+		LOGGER.log(Level.INFO,"Seleccionando checkboxs");
 		String yes = "yes";
 		if (check1.equals(yes) && check2.equals(yes)) {
 			if (!isSelected(checkboxNewsletter)) {
@@ -127,50 +139,62 @@ public class CreateAnAccountPage extends Base {
 	}
 
 	public void sendCompany(String company) {
+		LOGGER.log(Level.INFO,"Ingresando compania: "+company);
 		sendKeys(companyLocator, company);
 	}
 
 	public void sendAddress1(String address) {
+		LOGGER.log(Level.INFO,"Ingresando direccion: "+address);
 		sendKeys(address1Locator, address);
 	}
 
 	public void sendAddress2(String address) {
+		LOGGER.log(Level.INFO,"Ingresando detalle de direccion: "+address);
 		sendKeys(address2Locator, address);
 	}
 
 	public void sendCity(String city) {
+		LOGGER.log(Level.INFO,"Ingresando ciudad: "+city);
 		sendKeys(cityLocator, city);
 	}
 
 	public void selectCountry(String country) {
+		LOGGER.log(Level.INFO,"Seleccionando pais: "+country);
 		selectByText(countryLocator, country);
 	}
 
 	public void selectState(String state) {
+		LOGGER.log(Level.INFO,"Seleccionando estado: "+state);
 		selectByText(stateLocator, state);
 	}
 
 	public void sendPostalCode(String postalCode) {
+		LOGGER.log(Level.INFO,"Ingresando codigo postal: "+postalCode);
 		sendKeys(postalCodeLocator, postalCode);
 	}
 
 	public void sendAdditionalInformation(String addInfo) {
+		LOGGER.log(Level.INFO,"Ingresando informacion adicional: "+addInfo);
 		sendKeys(additionalInfoLocator, addInfo);
 	}
 
 	public void sendPhone(String phone) {
+		LOGGER.log(Level.INFO,"Ingresando telefono fijo: "+phone);
 		sendKeys(phoneLocator, phone);
 	}
 
 	public void sendPhoneMobile(String phoneMobile) {
+		LOGGER.log(Level.INFO,"Ingresando celular: "+phoneMobile);
 		sendKeys(phoneMobileLocator, phoneMobile);
 	}
 
 	public void sendAliasAddress(String aliasAddress) {
+		LOGGER.log(Level.INFO,"Ingresando alias: "+aliasAddress);
 		sendKeys(aliasAddressLocator, aliasAddress);
 	}
 
 	public void clicButtonRegister() {
+		LOGGER.log(Level.INFO,"Clic en boton Register");
 		clic(registerButtonLocator);
 	}
 

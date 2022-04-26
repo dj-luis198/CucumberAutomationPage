@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.logging.Level;
+
 public class MyAccountPage extends Base {
 
 	private String nameAccountLocator = "//a[@class=\"account\"]";
@@ -10,20 +12,28 @@ public class MyAccountPage extends Base {
 		super(driver);
 	}
 
-	private String pageTitle = "My account - My Store";
+	private String titleMyAccountPage = "My account - My Store";
 
 	public Boolean checkPage() {
-		if (pageTitle.equals(getTitle())) {
+		LOGGER.log(Level.INFO,"Comprobando el titulo de la pagina");
+		if (titleMyAccountPage.equals(getTitle())) {
+			LOGGER.log(Level.INFO,"Comprobacion exitosa: se encuentra en la pagina "+titleMyAccountPage);
 			return true;
+		}else {
+			LOGGER.log(Level.SEVERE,"Comprobacion fallida: No se encuentra en la pagina "+titleMyAccountPage);
+			return false;
 		}
-		return false;
 	}
 
 	public boolean verifyNameAccount(String text) {
+		LOGGER.log(Level.INFO,"Comprobando nombre de usuario");
 		if (text.equals(getText(nameAccountLocator))) {
+			LOGGER.log(Level.INFO,"Comprobacion exitosa, nombre de usuario: "+text);
 			return true;
+		}else {
+			LOGGER.log(Level.WARNING, "Comprobacion fallida, nombre de usuario incorrecto: " + getText(nameAccountLocator));
+			return false;
 		}
-		return false;
 	}
 
 }

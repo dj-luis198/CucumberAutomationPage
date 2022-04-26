@@ -2,6 +2,8 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.logging.Level;
+
 public class ViewPage extends Base {
 	private String quantityLocator = "//*[@id=\"quantity_wanted\"]";
 	private String sizeLocator = "//*[@id=\"group_1\"]";
@@ -17,18 +19,22 @@ public class ViewPage extends Base {
 	}
 
 	public void quantity(String cantidad) {
+		LOGGER.log(Level.INFO,"Ingresando la cantidad: "+cantidad);
 		sendKeys(quantityLocator, cantidad);
 	}
 
 	public void size(String talle) {
+		LOGGER.log(Level.INFO,"Seleccionando talle: "+talle);
 		select(sizeLocator, talle);
 	}
 
 	public void selectColor(String color) {
+		LOGGER.log(Level.INFO,"Seleccionando color: "+color);
 		clic(colorLocator + "\"" + color + "\"]");
 	}
 
 	public void clicAddToCart() {
+		LOGGER.log(Level.INFO,"Clic en boton Add To Cart");
 		clic(btnAddToCartLocator);
 	}
 
@@ -38,6 +44,7 @@ public class ViewPage extends Base {
 	}
 
 	public Boolean msjAddToCart(String resp_esperada) {
+		LOGGER.log(Level.INFO,"comprobando respuesta");
 		if (resp_esperada.equals(respObtenida())) {
 			return true;
 		}
@@ -57,6 +64,7 @@ public class ViewPage extends Base {
 	}
 
 	public void clicBtnProceedToCheckout() {
+		LOGGER.log(Level.INFO,"Clic en boton Checkout");
 		clicLinkText(btnCheckoutText);
 	}
 }

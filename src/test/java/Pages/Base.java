@@ -2,6 +2,7 @@ package Pages;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +10,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.LogHelper;
 
 public class Base {
 	private static WebDriver driver;
+	protected static final Logger LOGGER = LogHelper.getLogger();
 
 	public Base(WebDriver driver) {
 		Base.driver = driver;
