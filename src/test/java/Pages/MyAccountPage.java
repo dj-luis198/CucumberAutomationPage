@@ -6,13 +6,12 @@ import java.util.logging.Level;
 
 public class MyAccountPage extends Base {
 
-	private String nameAccountLocator = "//a[@class=\"account\"]";
+	private final String nameAccountLocator = "//a[@class=\"account\"]";
+	private final String titleMyAccountPage = "My account - My Store";
 
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
 	}
-
-	private String titleMyAccountPage = "My account - My Store";
 
 	public Boolean checkPage() {
 		LOGGER.log(Level.INFO,"Comprobando el titulo de la pagina");

@@ -6,9 +6,9 @@ import java.util.logging.Level;
 
 public class OrderPage extends Base {
 
-	private String titleOrderPage = "Order - My Store";
-	private String totalPriceLocator = "//*[@id=\"total_price\"]";
-	private String ProceedToCheckoutText = "Proceed to checkout";
+	private final String titleOrderPage = "Order - My Store";
+	private final String totalPriceLocator = "//*[@id=\"total_price\"]";
+	private final String ProceedToCheckoutText = "Proceed to checkout";
 
 	public OrderPage(WebDriver driver) {
 		super(driver);

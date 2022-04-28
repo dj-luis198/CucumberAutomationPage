@@ -7,9 +7,8 @@ import io.cucumber.java.en.*;
 public class CreateAnAccountSteps extends TestBase {
 
 	@And("Ingresa a la pagina Create an account {string}")
-	public void ingresaALaPaginaCreateAnAccount(String email) throws Exception {
-		loginPage.emailAccount(email);
-		loginPage.clicButtonCreate();
+	public void ingresaALaPaginaCreateAnAccount(String email){
+		loginPage.goToCreateAccount(email);
 		Assert.assertFalse("Se a desplegado un mensaje de error", loginPage.verifyErrorLogin());
 	}
 
@@ -17,13 +16,7 @@ public class CreateAnAccountSteps extends TestBase {
 	public void ingresaLosDatosPersonales(String genero, String nombre, String apellido, String email, String passwd,
 			String diaNac, String mesNac, String anioNac, String newsletter, String offers) {
 
-		createAnAccountPage.selectGender(genero);
-		createAnAccountPage.sendFirstName(nombre);
-		createAnAccountPage.sendLastName(apellido);
-		createAnAccountPage.verifyEmail(email);
-		createAnAccountPage.sendPasswd(passwd);
-		createAnAccountPage.selectDateOfBirth(diaNac, mesNac, anioNac);
-		createAnAccountPage.selectCheckboxs(newsletter, offers);
+		createAnAccountPage.yourPersonalInformation(genero,nombre,apellido,email, passwd,diaNac,mesNac,anioNac,newsletter,offers);
 	}
 
 	@And("Ingresa datos de domicilio {string} {string} {string} {string} {string} {string} {string} {string} {string} {string} {string} {string} {string}")
@@ -31,19 +24,8 @@ public class CreateAnAccountSteps extends TestBase {
 			String direccion2, String pais, String estado, String ciudad, String codPostal, String infoAdicional,
 			String telefono, String celular, String alias) {
 
-		createAnAccountPage.verifyFirstName(nombre);
-		createAnAccountPage.verifyLastName(apellido);
-		createAnAccountPage.sendCompany(compania);
-		createAnAccountPage.sendAddress1(direccion1);
-		createAnAccountPage.sendAddress2(direccion2);
-		createAnAccountPage.selectCountry(pais);
-		createAnAccountPage.selectState(estado);
-		createAnAccountPage.sendCity(ciudad);
-		createAnAccountPage.sendPostalCode(codPostal);
-		createAnAccountPage.sendAdditionalInformation("infoAdicional");
-		createAnAccountPage.sendPhone(telefono);
-		createAnAccountPage.sendPhoneMobile(celular);
-		createAnAccountPage.sendAliasAddress(alias);
+		createAnAccountPage.yourAddress(nombre,apellido,compania,direccion1,direccion2,pais,estado,ciudad,
+				codPostal,infoAdicional,telefono,celular,alias);
 	}
 
 	@And("^presiona el boton de registro$")
@@ -65,29 +47,18 @@ public class CreateAnAccountSteps extends TestBase {
 	@When("Ingresa los datos personales {string} {string} {string} {string}")
 	public void ingresaLosDatosPersonales(String nombre, String apellido, String email, String passwd) {
 
-		createAnAccountPage.sendFirstName(nombre);
-		createAnAccountPage.sendLastName(apellido);
-		createAnAccountPage.verifyEmail(email);
-		createAnAccountPage.sendPasswd(passwd);
-
+		createAnAccountPage.yourPersonalInformation(nombre,apellido,email,passwd);
 	}
 
 	@When("Ingresa datos de domicilio {string} {string} {string} {string} {string} {string} {string} {string} {string}")
 	public void ingresa_datos_de_domicilio(String nombre, String apellido, String direccion1, String pais,
 			String estado, String ciudad, String codPostal, String celular, String alias) {
-		createAnAccountPage.verifyFirstName(nombre);
-		createAnAccountPage.verifyLastName(apellido);
-		createAnAccountPage.sendAddress1(direccion1);
-		createAnAccountPage.selectCountry(pais);
-		createAnAccountPage.selectState(estado);
-		createAnAccountPage.sendCity(ciudad);
-		createAnAccountPage.sendPostalCode(codPostal);
-		createAnAccountPage.sendPhoneMobile(celular);
-		createAnAccountPage.sendAliasAddress(alias);
+
+		createAnAccountPage.yourAddress(nombre,apellido,direccion1,pais,estado,ciudad,codPostal,celular,alias);
 	}
 
 	@Then("deberia mostrar un mensaje de error {string}")
-	public void deberiaMostrarUnMensajeDeErrorFirstnameIsInvalid(String error) throws InterruptedException {
+	public void deberiaMostrarUnMensajeDeErrorFirstnameIsInvalid(String error){
 		Assert.assertTrue("No se mostro mensaje de error!", createAnAccountPage.verifyErrorCreateAccount(error));
 	}
 	

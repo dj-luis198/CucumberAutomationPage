@@ -6,8 +6,8 @@ import java.util.logging.Level;
 
 public class ShippingPage extends Base {
 
-	private String checkTermsLocator = "//*[@id=\"cgv\"]";
-	private String btnCheckoutLocator = "//button[@name=\"processCarrier\"]";
+	private final String checkTermsLocator = "//*[@id=\"cgv\"]";
+	private final String btnCheckoutLocator = "//button[@name=\"processCarrier\"]";
 
 	public ShippingPage(WebDriver driver) {
 		super(driver);

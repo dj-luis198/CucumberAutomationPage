@@ -10,18 +10,18 @@ public class HomePage extends Base {
 		super(driver);
 	}
 
-	private String titleHomePage = "My Store";
-	private String signInText = "Sign in";
-	private String searchTopLocator = "//*[@id=\"search_query_top\"]";
-	private String urlHomePage="http://automationpractice.com/index.php";
+	private final String titleHomePage = "My Store";
+	//private final String signInText = "Sign in";
+	private final String searchTopLocator = "//*[@id=\"search_query_top\"]";
+	private final String urlHomePage="http://automationpractice.com/index.php";
 	
 	public void goToHomePage() {
 		get(urlHomePage);
 	}
 
-	public void clicSignIn() {
+	/*public void clicSignIn() {
 		clicLinkText(signInText);
-	}
+	}*/
 
 	public Boolean verifyPage() {
 		LOGGER.log(Level.INFO,"Comprobando el titulo de la pagina");

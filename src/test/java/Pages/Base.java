@@ -42,14 +42,14 @@ public class Base {
 		}
 	}
 
-	protected static List<WebElement> findElements(String locator) {
+	/*protected static List<WebElement> findElements(String locator) {
 		try {
 			WebDriverWait ewait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			return ewait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.className(locator)));
 		} catch (org.openqa.selenium.TimeoutException | org.openqa.selenium.NoSuchElementException e) {
 			throw new Error("El locator " + locator + " no fue encontrado");
 		}
-	}
+	}*/
 
 	private static List<WebElement> findElementsName(String locator) {
 		try {
@@ -87,9 +87,9 @@ public class Base {
 		driver.get(url);
 	}
 
-	protected static int getSizeListWebElements(String locator) {
+	/*protected static int getSizeListWebElements(String locator) {
 		return findElements(locator).size();
-	}
+	}*/
 
 	protected static String getTitle() {
 		return driver.getTitle();
@@ -101,7 +101,7 @@ public class Base {
 
 	/**************************** isDisplayed, isVisibility, isSelected,isDisplayedError ***************************/
 
-	protected static Boolean isDisplayedError(String locator) throws Exception {
+	protected static Boolean isDisplayedError(String locator){
 		try {
 			WebDriverWait ewait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			return ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator))).isDisplayed();
@@ -114,12 +114,13 @@ public class Base {
 		return findElement(locator).isDisplayed();
 	}
 
-	protected static WebElement isVisibility(String locator) {
+	protected static boolean isVisibility(String locator) {
 		try {
 			WebDriverWait ewait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			return ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			return true;
 		} catch (org.openqa.selenium.TimeoutException | org.openqa.selenium.NoSuchElementException e) {
-			throw new Error("El locator " + locator + " no fue encontrado");
+			return false;
 		}
 	}
 
@@ -127,9 +128,9 @@ public class Base {
 		return findElement(locator).isSelected();
 	}
 
-	protected static Boolean isEnabled(String locator) {
+	/*protected static Boolean isEnabled(String locator) {
 		return findElement(locator).isEnabled();
-	}
+	}*/
 
 	/**************************** select, selectByValue, selectByText **************************/
 

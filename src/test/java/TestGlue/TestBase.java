@@ -16,17 +16,17 @@ import Pages.ViewPage;
 import Pages.YourPaymentMethodPage;
 
 public class TestBase {
-	protected WebDriver driver = Hooks.getDriver();
-	protected HomePage homePage = new HomePage(driver);
-	protected LoginPage loginPage = new LoginPage(driver);
-	protected MyAccountPage myAccountPage = new MyAccountPage(driver);
-	protected SearchPage searchPage = new SearchPage(driver);
-	protected ViewPage viewPage = new ViewPage(driver);
-	protected OrderPage orderPage = new OrderPage(driver);
-	protected AddressesPage addressPage = new AddressesPage(driver);
-	protected ShippingPage shippingPage = new ShippingPage(driver);
-	protected YourPaymentMethodPage yourPaymentMethodPage = new YourPaymentMethodPage(driver);
-	protected OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage(driver);
-	protected BankWirePaymentPage bankWirePaymentPage = new BankWirePaymentPage(driver);
-	protected CreateAnAccountPage createAnAccountPage = new CreateAnAccountPage(driver);
+	protected final WebDriver driver = Hooks.getDriver();
+	protected final HomePage homePage = new HomePage(driver);
+	protected final LoginPage loginPage = new LoginPage(driver);
+	protected final MyAccountPage myAccountPage = new MyAccountPage(driver);
+	protected final SearchPage searchPage = new SearchPage(driver);
+	protected final ViewPage viewPage = new ViewPage(driver);
+	protected final OrderPage orderPage = new OrderPage(driver);
+	protected final AddressesPage addressPage = new AddressesPage(driver);
+	protected final ShippingPage shippingPage = new ShippingPage(driver);
+	protected final YourPaymentMethodPage yourPaymentMethodPage = new YourPaymentMethodPage(driver);
+	protected final OrderConfirmationPage orderConfirmationPage = new OrderConfirmationPage(driver);
+	protected final BankWirePaymentPage bankWirePaymentPage = new BankWirePaymentPage(driver);
+	protected final CreateAnAccountPage createAnAccountPage = new CreateAnAccountPage(driver);
 }

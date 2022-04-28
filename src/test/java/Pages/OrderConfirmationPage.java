@@ -6,7 +6,7 @@ import java.util.logging.Level;
 
 public class OrderConfirmationPage extends Base {
 
-	private String titleOrderConfirmationPage = "Order confirmation - My Store";
+	private final String titleOrderConfirmationPage = "Order confirmation - My Store";
 
 	public OrderConfirmationPage(WebDriver driver) {
 		super(driver);

@@ -6,37 +6,37 @@ import java.util.logging.Level;
 
 public class CreateAnAccountPage extends Base {
 
-	private String radioButtonGenderLocator = "id_gender";
-	private String firstNameLocator = "//*[@id=\"customer_firstname\"]";
-	private String lastNameLocator = "//*[@id=\"customer_lastname\"]";
-	private String emailLocator = "//*[@id=\"email\"]";
-	private String passwdLocator = "//*[@id=\"passwd\"]";
-	private String daysLocator = "//*[@id=\"days\"]";
-	private String monthsLocator = "//*[@id=\"months\"]";
-	private String yearsLocator = "//*[@id=\"years\"]";
-	private String checkboxNewsletter = "//*[@id=\"newsletter\"]";
-	private String checkboxOptin = "//*[@id=\"optin\"]";
-	private String companyLocator = "//*[@id=\"company\"]";
-	private String address1Locator = "//*[@id=\"address1\"]";
-	private String address2Locator = "//*[@id=\"address2\"]";
-	private String cityLocator = "//*[@id=\"city\"]";
-	private String countryLocator = "//*[@id=\"id_country\"]";
-	private String stateLocator = "//*[@id=\"id_state\"]";
-	private String postalCodeLocator = "//*[@id=\"postcode\"]";
-	private String additionalInfoLocator = "//*[@id=\"other\"]";
-	private String phoneLocator = "//*[@id=\"phone\"]";
-	private String phoneMobileLocator = "//*[@id=\"phone_mobile\"]";
-	private String aliasAddressLocator = "//*[@id=\"alias\"]";
-	private String registerButtonLocator = "//*[@id=\"submitAccount\"]";
-	private String firstNameVerifyLocator = "//*[@id=\"firstname\"]";
-	private String lastNameVerifyLocator = "//*[@id=\"lastname\"]";
-	private String alertErrorLocator = "//*[@id=\"center_column\"]/div/ol";
+	private final String radioButtonGenderLocator = "id_gender";
+	private final String firstNameLocator = "//*[@id=\"customer_firstname\"]";
+	private final String lastNameLocator = "//*[@id=\"customer_lastname\"]";
+	private final String emailLocator = "//*[@id=\"email\"]";
+	private final String passwdLocator = "//*[@id=\"passwd\"]";
+	private final String daysLocator = "//*[@id=\"days\"]";
+	private final String monthsLocator = "//*[@id=\"months\"]";
+	private final String yearsLocator = "//*[@id=\"years\"]";
+	private final String checkboxNewsletter = "//*[@id=\"newsletter\"]";
+	private final String checkboxOptin = "//*[@id=\"optin\"]";
+	private final String companyLocator = "//*[@id=\"company\"]";
+	private final String address1Locator = "//*[@id=\"address1\"]";
+	private final String address2Locator = "//*[@id=\"address2\"]";
+	private final String cityLocator = "//*[@id=\"city\"]";
+	private final String countryLocator = "//*[@id=\"id_country\"]";
+	private final String stateLocator = "//*[@id=\"id_state\"]";
+	private final String postalCodeLocator = "//*[@id=\"postcode\"]";
+	private final String additionalInfoLocator = "//*[@id=\"other\"]";
+	private final String phoneLocator = "//*[@id=\"phone\"]";
+	private final String phoneMobileLocator = "//*[@id=\"phone_mobile\"]";
+	private final String aliasAddressLocator = "//*[@id=\"alias\"]";
+	private final String registerButtonLocator = "//*[@id=\"submitAccount\"]";
+	private final String firstNameVerifyLocator = "//*[@id=\"firstname\"]";
+	private final String lastNameVerifyLocator = "//*[@id=\"lastname\"]";
+	private final String alertErrorLocator = "//*[@id=\"center_column\"]/div/ol";
 
 	public CreateAnAccountPage(WebDriver driver) {
 		super(driver);
 	}
 
-	public Boolean verifyErrorCreateAccount(String error) throws InterruptedException {
+	public Boolean verifyErrorCreateAccount(String error){
 		LOGGER.log(Level.INFO,"Comprobando si hay errores");
 		if (isDisplayed(alertErrorLocator)) {
 			String text = getText(alertErrorLocator).replaceAll("\\r|\\n", "").replaceAll(" ", "");
@@ -198,4 +198,59 @@ public class CreateAnAccountPage extends Base {
 		clic(registerButtonLocator);
 	}
 
+	public void yourPersonalInformation(String genero, String nombre, String apellido, String email, String passwd,
+									String diaNac, String mesNac, String anioNac, String newsletter, String offers){
+		selectGender(genero);
+		sendFirstName(nombre);
+		sendLastName(apellido);
+		verifyEmail(email);
+		sendPasswd(passwd);
+		selectDateOfBirth(diaNac, mesNac, anioNac);
+		selectCheckboxs(newsletter, offers);
+	}
+
+
+	public void yourAddress(String nombre, String apellido, String compania, String direccion1,	String direccion2,
+							String pais, String estado, String ciudad, String codPostal, String infoAdicional,
+							String telefono, String celular, String alias){
+
+		verifyFirstName(nombre);
+		verifyLastName(apellido);
+		sendCompany(compania);
+		sendAddress1(direccion1);
+		sendAddress2(direccion2);
+		selectCountry(pais);
+		selectState(estado);
+		sendCity(ciudad);
+		sendPostalCode(codPostal);
+		sendAdditionalInformation(infoAdicional);
+		sendPhone(telefono);
+		sendPhoneMobile(celular);
+		sendAliasAddress(alias);
+
+	}
+
+	public void yourPersonalInformation(String nombre, String apellido, String email, String passwd){
+
+		sendFirstName(nombre);
+		sendLastName(apellido);
+		verifyEmail(email);
+		sendPasswd(passwd);
+	}
+
+
+	public void yourAddress(String nombre, String apellido, String direccion1, String pais,
+							String estado, String ciudad, String codPostal, String celular, String alias){
+
+		verifyFirstName(nombre);
+		verifyLastName(apellido);
+		sendAddress1(direccion1);
+		selectCountry(pais);
+		selectState(estado);
+		sendCity(ciudad);
+		sendPostalCode(codPostal);
+		sendPhoneMobile(celular);
+		sendAliasAddress(alias);
+
+	}
 }

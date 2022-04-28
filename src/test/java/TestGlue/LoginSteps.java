@@ -16,9 +16,7 @@ public class LoginSteps extends TestBase {
 
 	@When("Se logea {string} {string}")
 	public void seLogea(String email, String passwd) {
-		loginPage.sendEmail(email);
-		loginPage.sendPasswd(passwd);
-		loginPage.clicButtonSignIn();
+		loginPage.login(email,passwd);
 	}
 
 	@Then("^Deveria ser redirigido a la pagina My Account$")
@@ -27,7 +25,7 @@ public class LoginSteps extends TestBase {
 	}
 
 	@Then("Deveria Mostrar un mensaje de {string}")
-	public void deveriaMostrarUnMensajeDeError(String error) throws InterruptedException {
+	public void deveriaMostrarUnMensajeDeError(String error){
 		Assert.assertTrue("No se mostro mensaje de error!", loginPage.verifyErrorLogin(error));
 
 	}

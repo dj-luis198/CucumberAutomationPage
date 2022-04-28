@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import java.util.logging.Level;
 
 public class SearchPage extends Base {
-	private String titleSearchPage = "Search - My Store";
-	private String headingCounterLocator = "//span[@class=\"heading-counter\"]";
+	private final String titleSearchPage = "Search - My Store";
+	private final String headingCounterLocator = "//span[@class=\"heading-counter\"]";
 
 	public SearchPage(WebDriver driver) {
 		super(driver);

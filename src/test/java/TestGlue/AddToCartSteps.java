@@ -13,10 +13,7 @@ public class AddToCartSteps extends TestBase {
 
 	@And("agrega el producto al carrito {string} {string} {string}")
 	public void agregaElProductoAlCarrito(String cantidad, String talle, String color) {
-		viewPage.quantity(cantidad);
-		viewPage.size(talle);
-		viewPage.selectColor(color);
-		viewPage.clicAddToCart();
+		viewPage.addToCart(cantidad,talle,color);
 	}
 
 	@Then("deveria mostrar un mensaje de confirmacion {string}")

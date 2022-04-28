@@ -6,7 +6,7 @@ import java.util.logging.Level;
 
 public class AddressesPage extends Base {
 
-	private String btnProceedToCheckoutLocator = "//button[@name=\"processAddress\"]";
+	private final String btnProceedToCheckoutLocator = "//button[@name=\"processAddress\"]";
 
 	public AddressesPage(WebDriver driver) {
 		super(driver);

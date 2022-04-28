@@ -10,15 +10,15 @@ public class LoginPage extends Base {
 		super(driver);
 	}
 
-	private String emailLocator = "//*[@id=\"email\"]";
-	private String passwdLocator = "//*[@id=\"passwd\"]";
-	private String signInButtonLocator = "//*[@id=\"SubmitLogin\"]";
-	private String alertErrorLocator = "//*[@id=\"center_column\"]/div[1]/ol";
-	private String alertErrorAccountLocator = "//*[@id=\"create_account_error\"]/ol";
-	private String emailAccountLocator = "//*[@id=\"email_create\"]";
-	private String btnAccountLocator = "//*[@id=\"SubmitCreate\"]";
-	private String url="http://automationpractice.com/index.php?controller=authentication&back=my-account";
-	private String titleLoginPage="Login - My Store";
+	private final String emailLocator = "//*[@id=\"email\"]";
+	private final String passwdLocator = "//*[@id=\"passwd\"]";
+	private final String signInButtonLocator = "//*[@id=\"SubmitLogin\"]";
+	private final String alertErrorLocator = "//*[@id=\"center_column\"]/div[1]/ol";
+	private final String alertErrorAccountLocator = "//*[@id=\"create_account_error\"]/ol";
+	private final String emailAccountLocator = "//*[@id=\"email_create\"]";
+	private final String btnAccountLocator = "//*[@id=\"SubmitCreate\"]";
+	private final String url="http://automationpractice.com/index.php?controller=authentication&back=my-account";
+	private final String titleLoginPage="Login - My Store";
 	
 	public void goToLoginPage() {
 		get(url);
@@ -50,7 +50,7 @@ public class LoginPage extends Base {
 		clic(signInButtonLocator);
 	}
 
-	public Boolean verifyErrorLogin() throws Exception {
+	public Boolean verifyErrorLogin(){
 		if (isDisplayedError(alertErrorAccountLocator)) {
 			System.out.println("Mensaje de error mostrado: " + getText(alertErrorAccountLocator));
 			return true;
@@ -58,7 +58,7 @@ public class LoginPage extends Base {
 		return false;
 	}
 
-	public Boolean verifyErrorLogin(String error) throws InterruptedException {
+	public Boolean verifyErrorLogin(String error){
 		if (isDisplayed(alertErrorLocator) && getText(alertErrorLocator).equals(error)) {
 			System.out.println("Mensaje de error mostrado: " + getText(alertErrorLocator));
 			return true;
@@ -74,6 +74,17 @@ public class LoginPage extends Base {
 	public void clicButtonCreate() {
 		LOGGER.log(Level.INFO,"Clic en boton Create Account");
 		clic(btnAccountLocator);
+	}
+
+	public void login(String email, String passwd){
+		sendEmail(email);
+		sendPasswd(passwd);
+		clicButtonSignIn();
+	}
+
+	public void goToCreateAccount(String email){
+		emailAccount(email);
+		clicButtonCreate();
 	}
 
 }
