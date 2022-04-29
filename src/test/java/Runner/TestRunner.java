@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		glue = "TestGlue",
 		monochrome = true,
 		plugin = {"json:target/cucumber.json"},
-		//tags = "@test",
+		//tags = "@all",
 		snippets = SnippetType.CAMELCASE)
 
 public class TestRunner {

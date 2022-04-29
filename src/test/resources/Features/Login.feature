@@ -1,4 +1,4 @@
-@test
+@test @all
 Feature: Login
   Como usuario registrado quiero logearme en la pagina para poder realizar compras
 

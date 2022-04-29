@@ -1,4 +1,4 @@
-@search
+@search @all
 Feature: Search
   Como usuario quiero buscar productos por palabras claves para poder visualizarlos de manera rapida.
 
