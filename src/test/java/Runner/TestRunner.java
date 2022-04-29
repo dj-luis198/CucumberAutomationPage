@@ -8,11 +8,11 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features ="./src/test/java/Features",
+		features ="./src/test/resources/Features",
 		glue = "TestGlue",
 		monochrome = true,
 		plugin = {"json:target/cucumber.json"},
-		//tags = "@pay",
+		//tags = "@test",
 		snippets = SnippetType.CAMELCASE)
 
 public class TestRunner {
