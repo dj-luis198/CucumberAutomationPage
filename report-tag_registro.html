@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberAutomationPage</td>
               <td>1</td>
-            <td>29 Apr 2022, 00:21</td>
+            <td>29 Apr 2022, 01:43</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@registro</td>
-                    <td      class="passed"    >12</td>
-          <td      class="failed"    >4</td>
-          <td     class="skipped"   >21</td>
+                    <td      class="passed"    >37</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">37</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >5</td>
+          <td  class="passed"    >7</td>
+          <td >0</td>
           <td class="total">7</td>
 
-          <td class="duration" data-value="85905434300">1:25.905</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="96815365400">1:36.815</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">24.010</span>
+  <span class="lead-duration duration">14.022</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando todos los datos</span>
   
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">21.006</span>
+  <span class="lead-duration duration">1.001</span>
 
           </div>
 
@@ -239,9 +239,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -251,14 +251,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Ingresa a la pagina Create an account &quot;registro27@gmail.com&quot;</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro29@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">11.728</span>
+  <span class="lead-duration duration">10.446</span>
 
   </div>
 
@@ -279,59 +279,17 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro27@gmail.com&quot; &quot;pass1&quot; &quot;21&quot; &quot;7&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro29@gmail.com&quot; &quot;pass1&quot; &quot;21&quot; &quot;7&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">12.282</span>
+  <span class="lead-duration duration">1.139</span>
 
   </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchSessionException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'fv-az90-914', ip: '10.1.0.100', os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4f2f85944e93c735a6581e6ef60e723, findElements {using=name, value=id_gender}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\RUNNER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53321}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53321/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b4f2f85944e93c735a6581e6ef60e723
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:400)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:392)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:321)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:318)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at Pages.Base.findElementsName(Base.java:57)
-	at Pages.Base.clicRadioButton(Base.java:75)
-	at Pages.CreateAnAccountPage.selectGender(CreateAnAccountPage.java:63)
-	at Pages.CreateAnAccountPage.yourPersonalInformation(CreateAnAccountPage.java:203)
-	at TestGlue.CreateAnAccountSteps.ingresaLosDatosPersonales(CreateAnAccountSteps.java:19)
-	at &#10045;.Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro27@gmail.com&quot; &quot;pass1&quot; &quot;21&quot; &quot;7&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -346,11 +304,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.233</span>
 
   </div>
 
@@ -371,11 +329,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.145</span>
 
   </div>
 
@@ -396,11 +354,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">deberia ser redirigido a la pagina My account</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
   </div>
 
@@ -421,11 +379,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.051</span>
 
   </div>
 
@@ -450,7 +408,7 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -462,13 +420,13 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">6.201</span>
+  <span class="lead-duration duration">0.102</span>
 
           </div>
 
@@ -478,21 +436,6 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
                     
 
           
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_13213901.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_13213901.png">
-      </div>
-    </div>
-  </div>
-        </div>
   
         </div>
           </div>
@@ -515,12 +458,12 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
 
   
-  <span class="lead-duration duration">10.059</span>
+  <span class="lead-duration duration">13.332</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando solo datos obligatorios</span>
   
@@ -531,10 +474,10 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -546,13 +489,13 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">2.798</span>
+  <span class="lead-duration duration">0.971</span>
 
           </div>
 
@@ -570,9 +513,9 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -582,39 +525,20 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Ingresa a la pagina Create an account &quot;registro28@gmail.com&quot;</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro30@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.059</span>
+  <span class="lead-duration duration">10.509</span>
 
   </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
-          <a>java.lang.Error:</a>
-      </div>
-      <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.Error: El locator //*[@id=&quot;email_create&quot;] no fue encontrado
-	at Pages.Base.findElement(Base.java:32)
-	at Pages.Base.clear(Base.java:153)
-	at Pages.Base.sendKeys(Base.java:169)
-	at Pages.LoginPage.emailAccount(LoginPage.java:71)
-	at Pages.LoginPage.goToCreateAccount(LoginPage.java:86)
-	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:11)
-	at &#10045;.Ingresa a la pagina Create an account &quot;registro28@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:21)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -629,11 +553,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Ingresa los datos personales &quot;Daniel&quot; &quot;Farias&quot; &quot;registro28@gmail.com&quot; &quot;pass1&quot;</span>
+  <span class="name">Ingresa los datos personales &quot;Daniel&quot; &quot;Farias&quot; &quot;registro30@gmail.com&quot; &quot;pass1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.357</span>
 
   </div>
 
@@ -654,11 +578,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;direccion11&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.841</span>
 
   </div>
 
@@ -679,11 +603,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.588</span>
 
   </div>
 
@@ -704,11 +628,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">deberia ser redirigido a la pagina My account</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.008</span>
 
   </div>
 
@@ -729,11 +653,11 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.026</span>
 
   </div>
 
@@ -758,7 +682,7 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -770,13 +694,13 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">5.835</span>
+  <span class="lead-duration duration">0.113</span>
 
           </div>
 
@@ -786,21 +710,6 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
                     
 
           
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_402703636.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-12" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_402703636.png">
-      </div>
-    </div>
-  </div>
-        </div>
   
         </div>
           </div>
@@ -823,12 +732,12 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
 
   
-  <span class="lead-duration duration">21.378</span>
+  <span class="lead-duration duration">13.213</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
   
@@ -839,7 +748,256 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">TestGlue.Hooks.setUp()</span>
+                        
+  <span class="lead-duration duration">1.032</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
+  
+  <span class="lead-duration duration">10.402</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  
+  <span class="lead-duration duration">0.771</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  
+  <span class="lead-duration duration">1.198</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">presiona el boton de registro</span>
+  
+  <span class="lead-duration duration">0.776</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">deberia mostrar un mensaje de error &quot;Invalid date of birth&quot;</span>
+  
+  <span class="lead-duration duration">0.063</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">0.142</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_registro.html">@registro</a>
+      </div>
+
+  
+  <span class="lead-duration duration">14.328</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
@@ -860,7 +1018,7 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">2.046</span>
+  <span class="lead-duration duration">0.958</span>
 
           </div>
 
@@ -878,9 +1036,9 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -890,14 +1048,14 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.990</span>
+  <span class="lead-duration duration">10.483</span>
 
   </div>
 
@@ -918,40 +1076,17 @@ Session ID: b4f2f85944e93c735a6581e6ef60e723
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;aaa11a&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">10.386</span>
+  <span class="lead-duration duration">0.758</span>
 
   </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>java.lang.Error:</a>
-      </div>
-      <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>java.lang.Error: WebElement id_gender no encontrado: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.name: id_gender (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'fv-az90-914', ip: '10.1.0.100', os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\RUNNER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53793/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2012d2696a7d32a235cf91bf3831551e
-	at Pages.Base.findElementsName(Base.java:59)
-	at Pages.Base.clicRadioButton(Base.java:75)
-	at Pages.CreateAnAccountPage.selectGender(CreateAnAccountPage.java:63)
-	at Pages.CreateAnAccountPage.yourPersonalInformation(CreateAnAccountPage.java:203)
-	at TestGlue.CreateAnAccountSteps.ingresaLosDatosPersonales(CreateAnAccountSteps.java:19)
-	at &#10045;.Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:34)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -966,11 +1101,11 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  <span class="name">Ingresa datos de domicilio &quot;aaa11a&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.197</span>
 
   </div>
 
@@ -991,11 +1126,11 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.825</span>
 
   </div>
 
@@ -1016,11 +1151,11 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">deberia mostrar un mensaje de error &quot;Invalid date of birth&quot;</span>
+  <span class="name">deberia mostrar un mensaje de error &quot;firstname is invalid.&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.063</span>
 
   </div>
 
@@ -1045,7 +1180,7 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-17">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1057,13 +1192,13 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
 
     </div>
 
-    <div id="after-17" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">4.156</span>
+  <span class="lead-duration duration">0.128</span>
 
           </div>
 
@@ -1073,21 +1208,6 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
                     
 
           
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_13213901.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-18" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_13213901.png">
-      </div>
-    </div>
-  </div>
-        </div>
   
         </div>
           </div>
@@ -1110,12 +1230,12 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
       </div>
 
   
-  <span class="lead-duration duration">1.406</span>
+  <span class="lead-duration duration">13.568</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
   
@@ -1126,10 +1246,10 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-17" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1141,13 +1261,13 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
 
     </div>
 
-    <div id="before-20" class="inner-level collapse collapsable-details ">
+    <div id="before-18" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.292</span>
+  <span class="lead-duration duration">1.025</span>
 
           </div>
 
@@ -1165,9 +1285,9 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1177,60 +1297,20 @@ Session ID: 2012d2696a7d32a235cf91bf3831551e
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">1.406</span>
+  <span class="lead-duration duration">10.445</span>
 
   </div>
 
         
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
-          <a>org.openqa.selenium.StaleElementReferenceException:</a>
-      </div>
-      <div id="msg-22" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=101.0.4951.41)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'fv-az90-914', ip: '10.1.0.100', os.name: 'Windows Server 2022', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d7ce8df6219f6c3dc15001220aafbee, clearElement {id=87755ba9-d94b-43dc-aac4-51e8b12e92d2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\RUNNER~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53910/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (3d7ce8df6219f6c3dc15001220aafbee)] -&gt; xpath: //*[@id=&quot;email_create&quot;]]
-Session ID: 3d7ce8df6219f6c3dc15001220aafbee
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:126)
-	at Pages.Base.clear(Base.java:153)
-	at Pages.Base.sendKeys(Base.java:169)
-	at Pages.LoginPage.emailAccount(LoginPage.java:71)
-	at Pages.LoginPage.goToCreateAccount(LoginPage.java:86)
-	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:11)
-	at &#10045;.Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:33)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -1245,11 +1325,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;aaa11a&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;111aaa&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.756</span>
 
   </div>
 
@@ -1270,11 +1350,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;aaa11a&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;111aaa&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.192</span>
 
   </div>
 
@@ -1295,11 +1375,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.097</span>
 
   </div>
 
@@ -1320,11 +1400,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">deberia mostrar un mensaje de error &quot;firstname is invalid.&quot;</span>
+  <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid.&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.075</span>
 
   </div>
 
@@ -1349,7 +1429,7 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1361,13 +1441,13 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
 
     </div>
 
-    <div id="after-23" class="inner-level collapse collapsable-details ">
+    <div id="after-20" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.465</span>
+  <span class="lead-duration duration">0.102</span>
 
           </div>
 
@@ -1377,21 +1457,6 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
                     
 
           
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-476300210.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-24" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-476300210.png">
-      </div>
-    </div>
-  </div>
-        </div>
   
         </div>
           </div>
@@ -1414,12 +1479,12 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">15.230</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
   
@@ -1430,7 +1495,256 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details  in ">
+  <div id="element-21" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-22" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">TestGlue.Hooks.setUp()</span>
+                        
+  <span class="lead-duration duration">0.983</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
+  
+  <span class="lead-duration duration">10.461</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  
+  <span class="lead-duration duration">0.732</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  
+  <span class="lead-duration duration">1.143</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">presiona el boton de registro</span>
+  
+  <span class="lead-duration duration">2.836</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">deberia mostrar un mensaje de error &quot;The Zip/Postal code you've entered is invalid. It must follow this format: 00000&quot;</span>
+  
+  <span class="lead-duration duration">0.057</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">0.104</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_registro.html">@registro</a>
+      </div>
+
+  
+  <span class="lead-duration duration">13.121</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
@@ -1451,7 +1765,7 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.293</span>
+  <span class="lead-duration duration">1.048</span>
 
           </div>
 
@@ -1469,9 +1783,9 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1481,14 +1795,14 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
 
   </div>
 
-  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">10.393</span>
 
   </div>
 
@@ -1509,11 +1823,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;111aaa&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;100kjj&quot; &quot;Aaa111&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;2&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.755</span>
 
   </div>
 
@@ -1534,11 +1848,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;111aaa&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  <span class="name">Ingresa datos de domicilio &quot;100kjj&quot; &quot;Aaa111&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;a1&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.137</span>
 
   </div>
 
@@ -1559,11 +1873,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.768</span>
 
   </div>
 
@@ -1584,11 +1898,11 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid.&quot;</span>
+  <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid. firstname is invalid. The Zip/Postal code you've entered is invalid. It must follow this format: 00000 Invalid date of birth&quot;</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.065</span>
 
   </div>
 
@@ -1631,520 +1945,7 @@ Session ID: 3d7ce8df6219f6c3dc15001220aafbee
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3.624</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-    <div class="embeddings inner-level">
-                <div class="embedding indention">
-        <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_13213901.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-29" class="collapse collapsable-details">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_13213901.png">
-      </div>
-    </div>
-  </div>
-        </div>
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_registro.html">@registro</a>
-      </div>
-
-  
-  <span class="lead-duration duration">14.908</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-30" class="collapse collapsable-details ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-31">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-31" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">TestGlue.Hooks.setUp()</span>
-                        
-  <span class="lead-duration duration">1.098</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-32" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
-  
-  <span class="lead-duration duration">10.323</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
-  
-  <span class="lead-duration duration">0.917</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
-  
-  <span class="lead-duration duration">1.351</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">presiona el boton de registro</span>
-  
-  <span class="lead-duration duration">2.247</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">deberia mostrar un mensaje de error &quot;The Zip/Postal code you've entered is invalid. It must follow this format: 00000&quot;</span>
-  
-  <span class="lead-duration duration">0.069</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-33" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">0.152</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
-    </div>
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_registro.html">@registro</a>
-      </div>
-
-  
-  <span class="lead-duration duration">14.142</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Registrarse en la pagina ingresando datos invalidos</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-34" class="collapse collapsable-details ">
-    
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-35">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-35" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">TestGlue.Hooks.setUp()</span>
-                        
-  <span class="lead-duration duration">1.116</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-36" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
-  
-  <span class="lead-duration duration">10.527</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;100kjj&quot; &quot;Aaa111&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;2&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
-  
-  <span class="lead-duration duration">1.040</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;100kjj&quot; &quot;Aaa111&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;a1&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
-  
-  <span class="lead-duration duration">1.534</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">presiona el boton de registro</span>
-  
-  <span class="lead-duration duration">0.962</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid. firstname is invalid. The Zip/Postal code you've entered is invalid. It must follow this format: 00000 Invalid date of birth&quot;</span>
-  
-  <span class="lead-duration duration">0.077</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-37" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">2.428</span>
+  <span class="lead-duration duration">0.103</span>
 
           </div>
 
