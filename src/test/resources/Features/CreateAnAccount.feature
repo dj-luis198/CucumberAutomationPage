@@ -15,7 +15,7 @@ Feature: Registro de usuarios
 
     Examples: 
       | genero | nombre | apellido | email                | passwd | diaNac | mesNac | anioNac | newsletter | offers | compania | direccion1  | direccion2  | pais          | estado  | ciudad  | codPostal | infoAdicional  | telefono   | celular   | alias  |
-      | Mr.    | Daniel | Farias   | registro29@gmail.com | pass1  |     21 |      7 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 |
+      | Mr.    | Daniel | Farias   | registro31@gmail.com | pass1  |     21 |      7 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 |
 
   Scenario Outline: Registrarse en la pagina ingresando solo datos obligatorios
     When Ingresa a la pagina Create an account "<email>"
@@ -27,7 +27,7 @@ Feature: Registro de usuarios
 
     Examples: 
       | nombre | apellido | email                | passwd | direccion1  | pais          | estado  | ciudad  | codPostal | celular   | alias  |
-      | Daniel | Farias   | registro30@gmail.com | pass1  | direccion11 | United States | Arizona | ciudad1 |     11111 | 301211111 | alias1 |
+      | Daniel | Farias   | registro32@gmail.com | pass1  | direccion11 | United States | Arizona | ciudad1 |     11111 | 301211111 | alias1 |
 
   Scenario Outline: Registrarse en la pagina ingresando datos invalidos
     When Ingresa a la pagina Create an account "<email>"
