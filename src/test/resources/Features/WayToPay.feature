@@ -1,11 +1,11 @@
-  @pay
+@pay
 Feature: Formas de pago
   Como usuario quiero seleccionar una forma de pago para completar una compra.
 
-  Background: 
+  Background:
     Given El usuario esta en la home page
 
-  Scenario Outline: 
+  Scenario Outline:
     Forma de pago transferencia bancaria.
 
     And realiza la busqueda de un producto "<criterio>"
@@ -20,12 +20,12 @@ Feature: Formas de pago
     And Presiona el boton I confirm my order
     Then Es redireccionado a la pagina Order Confirmation
 
-    Examples: 
+    Examples:
       | criterio                    | nombre                      | cantidad | talle | color | email               | passwd |
       | Blouse                      | Blouse                      |        3 | M     | Black | mycuenta@gmail.com  | pass1  |
       | Faded Short Sleeve T-shirts | Faded Short Sleeve T-shirts |        2 | L     | Blue  | mycuenta5@gmail.com | pass1  |
 
-  Scenario Outline: 
+  Scenario Outline:
     Forma de pago cheque.
 
     And realiza la busqueda de un producto "<criterio>"
@@ -40,7 +40,7 @@ Feature: Formas de pago
     And Presiona el boton I confirm my order
     Then Es redireccionado a la pagina Order Confirmation
 
-    Examples: 
+    Examples:
       | criterio                    | nombre                      | cantidad | talle | color | email               | passwd |
       | Blouse                      | Blouse                      |        3 | M     | Black | mycuenta@gmail.com  | pass1  |
       | Faded Short Sleeve T-shirts | Faded Short Sleeve T-shirts |        2 | L     | Blue  | mycuenta5@gmail.com | pass1  |

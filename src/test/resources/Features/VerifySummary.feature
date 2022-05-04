@@ -2,7 +2,7 @@
 Feature: Verificar sumario
   Como usuario quiero ir al sumario para verificar el costo total de la compra.
 
-  Scenario Outline: 
+  Scenario Outline:
     Verificar que el monto total de la compra es correcto.
 
     Given El usuario esta en la home page
@@ -13,7 +13,7 @@ Feature: Verificar sumario
     Then deberia redirigir a la pagina Order
     And el total de la compra deberia ser igual al total esperado "<totalEsperado>"
 
-    Examples: 
+    Examples:
       | criterio                    | nombre                      | cantidad | talle | color | totalEsperado |
       | Blouse                      | Blouse                      |        1 | M     | Black | $29.00        |
       | Faded Short Sleeve T-shirts | Faded Short Sleeve T-shirts |        3 | L     | Blue  | $51.53        |

@@ -2,7 +2,7 @@
 Feature: Registro de usuarios
   Como usuario quiero registrarme para poder realizar compras
 
-  Background: 
+  Background:
     Given El usuario esta en login page
 
   Scenario Outline: Registrarse en la pagina ingresando todos los datos
@@ -13,9 +13,9 @@ Feature: Registro de usuarios
     Then deberia ser redirigido a la pagina My account
     And deberia mostrar mi apelledo y nombre "<nombre>" "<apellido>"
 
-    Examples: 
+    Examples:
       | genero | nombre | apellido | email                | passwd | diaNac | mesNac | anioNac | newsletter | offers | compania | direccion1  | direccion2  | pais          | estado  | ciudad  | codPostal | infoAdicional  | telefono   | celular   | alias  |
-      | Mr.    | Daniel | Farias   | registro31@gmail.com | pass1  |     21 |      7 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 |
+      | Mr.    | Daniel | Farias   | registro33@gmail.com | pass1  |     21 |      7 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 |
 
   Scenario Outline: Registrarse en la pagina ingresando solo datos obligatorios
     When Ingresa a la pagina Create an account "<email>"
@@ -25,9 +25,9 @@ Feature: Registro de usuarios
     Then deberia ser redirigido a la pagina My account
     And deberia mostrar mi apelledo y nombre "<nombre>" "<apellido>"
 
-    Examples: 
+    Examples:
       | nombre | apellido | email                | passwd | direccion1  | pais          | estado  | ciudad  | codPostal | celular   | alias  |
-      | Daniel | Farias   | registro32@gmail.com | pass1  | direccion11 | United States | Arizona | ciudad1 |     11111 | 301211111 | alias1 |
+      | Daniel | Farias   | registro34@gmail.com | pass1  | direccion11 | United States | Arizona | ciudad1 |     11111 | 301211111 | alias1 |
 
   Scenario Outline: Registrarse en la pagina ingresando datos invalidos
     When Ingresa a la pagina Create an account "<email>"
@@ -36,7 +36,7 @@ Feature: Registro de usuarios
     And presiona el boton de registro
     Then deberia mostrar un mensaje de error "<error>"
 
-    Examples: 
+    Examples:
       | genero | nombre | apellido | email               | passwd | diaNac | mesNac | anioNac | newsletter | offers | compania | direccion1  | direccion2  | pais          | estado  | ciudad  | codPostal | infoAdicional  | telefono   | celular   | alias  | error                                                                                                                                             |
       | Mr.    | Daniel | Farias   | registro8@gmail.com | pass1  |     31 |      6 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 | Invalid date of birth                                                                                                                             |
       | Mr.    | aaa11a | Farias   | registro8@gmail.com | pass1  |     20 |      6 |    2000 | yes        | no     | NA       | direccion11 | direccion12 | United States | Arizona | ciudad1 |     11111 | infoAdicional1 | 4444455214 | 301211111 | alias1 | firstname is invalid.                                                                                                                             |
