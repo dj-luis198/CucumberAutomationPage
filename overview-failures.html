@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberAutomationPage</td>
               <td>1</td>
-            <td>04 May 2022, 12:13</td>
+            <td>19 Sep 2022, 02:51</td>
     </tr>
   </tbody>
 </table>
@@ -118,25 +118,24 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_file-src-test-resources-Features-Login-feature.html">Login</a>
+      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_test.html">@test</a>
-           <a href="report-tag_all.html">@all</a>
+           <a href="report-tag_registro.html">@registro</a>
       </div>
 
   
-  <span class="lead-duration duration">10.809</span>
+  <span class="lead-duration duration">1.779</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Login con email y password incorrectos o invalidos partiendo de la home page</span>
+  <span class="name">Registrarse en la pagina ingresando todos los datos</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -166,7 +165,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.137</span>
+  <span class="lead-duration duration">1.027</span>
 
           </div>
 
@@ -199,11 +198,53 @@ $(document).ready(function() {
   <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
-  <span class="name">Se logea &quot;mycuentagmail.com&quot; &quot;pass1&quot;</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro33@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">0.594</span>
+  <span class="lead-duration duration">1.779</span>
+
+  </div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Se a desplegado un mensaje de error
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:12)
+	at &#10045;.Ingresa a la pagina Create an account &quot;registro33@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro33@gmail.com&quot; &quot;pass1&quot; &quot;21&quot; &quot;7&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -224,11 +265,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Deveria Mostrar un mensaje de &quot;Invalid email address.&quot;</span>
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">10.214</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -236,22 +277,80 @@ $(document).ready(function() {
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.Error:</a>
+
+        
+        
+
+        
+
+        
+  
+        
+
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.Error: El locator //*[@id=&quot;center_column&quot;]/div[1]/ol no fue encontrado
-	at Pages.Base.findElement(Base.java:32)
-	at Pages.Base.isDisplayed(Base.java:114)
-	at Pages.LoginPage.verifyErrorLogin(LoginPage.java:62)
-	at TestGlue.LoginSteps.deveriaMostrarUnMensajeDeError(LoginSteps.java:29)
-	at &#10045;.Deveria Mostrar un mensaje de &quot;Invalid email address.&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/Login.feature:19)
-</pre>
-      </div>
-    </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">presiona el boton de registro</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
   </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">deberia ser redirigido a la pagina My account</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
 
 
         
@@ -288,7 +387,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.243</span>
+  <span class="lead-duration duration">0.216</span>
 
           </div>
 
@@ -302,13 +401,13 @@ $(document).ready(function() {
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1015842330.png" download target="_blank">
+      <a href="embeddings/embedding_-1212940482.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1015842330.png">
+        <img src="embeddings/embedding_-1212940482.png">
       </div>
     </div>
   </div>
@@ -325,32 +424,31 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_file-src-test-resources-Features-Search-feature.html">Search</a>
+      <a href="report-feature_file-src-test-resources-Features-CreateAnAccount-feature.html">Registro de usuarios</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_search.html">@search</a>
-           <a href="report-tag_all.html">@all</a>
+           <a href="report-tag_registro.html">@registro</a>
       </div>
 
   
-  <span class="lead-duration duration">0.245</span>
+  <span class="lead-duration duration">1.261</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name"></span>
+  <span class="name">Registrarse en la pagina ingresando solo datos obligatorios</span>
   
 
        <i class="chevron fa fa-fw"></i>
   </div>
 
   </span>
-  <div class="description indention">    Busqueda de productos desde la home page - sin logearse</div>
+  <div class="description indention"></div>
 
   <div id="element-7" class="collapse collapsable-details  in ">
     
@@ -373,7 +471,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.117</span>
+  <span class="lead-duration duration">1.031</span>
 
           </div>
 
@@ -407,10 +505,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">El usuario esta en la home page</span>
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro34@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">0.245</span>
+  <span class="lead-duration duration">1.261</span>
 
   </div>
 
@@ -424,11 +522,12 @@ $(document).ready(function() {
           <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: No esta en la home page
+        <pre>java.lang.AssertionError: Se a desplegado un mensaje de error
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at TestGlue.SearchSteps.elUsuarioEstaEnLaHomePage(SearchSteps.java:12)
-	at &#10045;.El usuario esta en la home page(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/Search.feature:8)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:12)
+	at &#10045;.Ingresa a la pagina Create an account &quot;registro34@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:21)
 </pre>
       </div>
     </div>
@@ -448,8 +547,58 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">realiza la busqueda de un producto &quot;chiffon&quot;</span>
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa los datos personales &quot;Daniel&quot; &quot;Farias&quot; &quot;registro34@gmail.com&quot; &quot;pass1&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;direccion11&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">presiona el boton de registro</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -474,7 +623,32 @@ $(document).ready(function() {
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">deveria de mostrar un listado de productos encontrados &quot;2 results have been found.&quot;</span>
+  <span class="name">deberia ser redirigido a la pagina My account</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -519,7 +693,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.232</span>
+  <span class="lead-duration duration">0.217</span>
 
           </div>
 
@@ -533,13 +707,13 @@ $(document).ready(function() {
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1015842330.png" download target="_blank">
+      <a href="embeddings/embedding_-1212940482.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-12" class="collapse collapsable-details">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1015842330.png">
+        <img src="embeddings/embedding_-1212940482.png">
       </div>
     </div>
   </div>

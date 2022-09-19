@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberAutomationPage</td>
               <td>1</td>
-            <td>04 May 2022, 12:13</td>
+            <td>19 Sep 2022, 02:51</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Registro de usuarios</td>
-                    <td      class="passed"    >44</td>
-          <td >0</td>
-          <td >0</td>
+                    <td      class="passed"    >32</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >10</td>
           <td >0</td>
           <td >0</td>
           <td class="total">44</td>
 
-          <td  class="passed"    >7</td>
-          <td >0</td>
+          <td  class="passed"    >5</td>
+          <td  class="failed"    >2</td>
           <td class="total">7</td>
 
-          <td class="duration" data-value="247588784500">4:7.588</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="85569136500">1:25.569</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -176,7 +176,7 @@ $(document).ready(function() {
       </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Registro de usuarios</span>
   
@@ -194,7 +194,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">9.615</span>
+  <span class="lead-duration duration">3.205</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -235,7 +235,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">9.615</span>
+  <span class="lead-duration duration">3.205</span>
 
   </div>
 
@@ -273,12 +273,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">24.573</span>
+  <span class="lead-duration duration">1.779</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Registrarse en la pagina ingresando todos los datos</span>
   
@@ -289,7 +289,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
@@ -310,7 +310,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.404</span>
+  <span class="lead-duration duration">1.027</span>
 
           </div>
 
@@ -328,9 +328,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -340,20 +340,37 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro33@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.617</span>
+  <span class="lead-duration duration">1.779</span>
 
   </div>
 
         
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Se a desplegado un mensaje de error
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:12)
+	at &#10045;.Ingresa a la pagina Create an account &quot;registro33@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -368,11 +385,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro33@gmail.com&quot; &quot;pass1&quot; &quot;21&quot; &quot;7&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">1.081</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -393,11 +410,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.566</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -418,11 +435,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">11.263</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -443,11 +460,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">deberia ser redirigido a la pagina My account</span>
   
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -468,11 +485,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">And</span>
   <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
   
-  <span class="lead-duration duration">0.034</span>
+  <span class="lead-duration duration">0.000</span>
 
   </div>
 
@@ -497,7 +514,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -509,13 +526,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">0.216</span>
 
           </div>
 
@@ -525,6 +542,21 @@ $(document).ready(function() {
                     
 
           
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1212940482.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-8" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1212940482.png">
+      </div>
+    </div>
+  </div>
+        </div>
   
         </div>
           </div>
@@ -541,93 +573,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">7.365</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-7" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">El usuario esta en login page</span>
-  
-  <span class="lead-duration duration">7.365</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_registro.html">@registro</a>
-      </div>
-
-  
-  <span class="lead-duration duration">25.133</span>
+  <span class="lead-duration duration">2.288</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Registrarse en la pagina ingresando solo datos obligatorios</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -638,44 +591,11 @@ $(document).ready(function() {
 
   <div id="element-9" class="collapse collapsable-details ">
     
-  <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-10" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">TestGlue.Hooks.setUp()</span>
-                        
-  <span class="lead-duration duration">1.222</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -687,249 +607,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Ingresa a la pagina Create an account &quot;registro34@gmail.com&quot;</span>
-  
-  <span class="lead-duration duration">10.591</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Ingresa los datos personales &quot;Daniel&quot; &quot;Farias&quot; &quot;registro34@gmail.com&quot; &quot;pass1&quot;</span>
-  
-  <span class="lead-duration duration">0.470</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;direccion11&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
-  
-  <span class="lead-duration duration">1.016</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">presiona el boton de registro</span>
-  
-  <span class="lead-duration duration">13.018</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">deberia ser redirigido a la pagina My account</span>
-  
-  <span class="lead-duration duration">0.006</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
-  
-  <span class="lead-duration duration">0.030</span>
-
-  </div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-12" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">0.170</span>
-
-          </div>
-
-                      
-
-          
-                    
-
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">9.344</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-13" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">9.344</span>
+  <span class="lead-duration duration">2.288</span>
 
   </div>
 
@@ -967,10 +652,389 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">22.049</span>
+  <span class="lead-duration duration">1.261</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Registrarse en la pagina ingresando solo datos obligatorios</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">TestGlue.Hooks.setUp()</span>
+                        
+  <span class="lead-duration duration">1.031</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ingresa a la pagina Create an account &quot;registro34@gmail.com&quot;</span>
+  
+  <span class="lead-duration duration">1.261</span>
+
+  </div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Se a desplegado un mensaje de error
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at TestGlue.CreateAnAccountSteps.ingresaALaPaginaCreateAnAccount(CreateAnAccountSteps.java:12)
+	at &#10045;.Ingresa a la pagina Create an account &quot;registro34@gmail.com&quot;(file:///D:/a/CucumberAutomationPage/CucumberAutomationPage/./src/test/resources/Features/CreateAnAccount.feature:21)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa los datos personales &quot;Daniel&quot; &quot;Farias&quot; &quot;registro34@gmail.com&quot; &quot;pass1&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;direccion11&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">presiona el boton de registro</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">deberia ser redirigido a la pagina My account</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">deberia mostrar mi apelledo y nombre &quot;Daniel&quot; &quot;Farias&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-15" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">0.217</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1212940482.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-16" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1212940482.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.195</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">El usuario esta en login page</span>
+  
+  <span class="lead-duration duration">1.195</span>
+
+  </div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_registro.html">@registro</a>
+      </div>
+
+  
+  <span class="lead-duration duration">13.590</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -983,10 +1047,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-19" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-20">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -998,13 +1062,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-16" class="inner-level collapse collapsable-details ">
+    <div id="before-20" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.175</span>
+  <span class="lead-duration duration">0.969</span>
 
           </div>
 
@@ -1022,7 +1086,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1034,14 +1098,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.565</span>
+  <span class="lead-duration duration">10.449</span>
 
   </div>
 
@@ -1066,7 +1130,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">1.639</span>
+  <span class="lead-duration duration">0.753</span>
 
   </div>
 
@@ -1091,7 +1155,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.638</span>
+  <span class="lead-duration duration">1.190</span>
 
   </div>
 
@@ -1116,7 +1180,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">8.126</span>
+  <span class="lead-duration duration">1.026</span>
 
   </div>
 
@@ -1141,7 +1205,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">deberia mostrar un mensaje de error &quot;Invalid date of birth&quot;</span>
   
-  <span class="lead-duration duration">0.078</span>
+  <span class="lead-duration duration">0.170</span>
 
   </div>
 
@@ -1166,7 +1230,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1178,13 +1242,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-22" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.153</span>
+  <span class="lead-duration duration">0.169</span>
 
           </div>
 
@@ -1210,10 +1274,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">11.510</span>
+  <span class="lead-duration duration">1.194</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1226,13 +1290,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-23" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1244,14 +1308,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">11.510</span>
+  <span class="lead-duration duration">1.194</span>
 
   </div>
 
@@ -1289,10 +1353,10 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">26.363</span>
+  <span class="lead-duration duration">13.975</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1305,10 +1369,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-25" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1320,13 +1384,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-22" class="inner-level collapse collapsable-details ">
+    <div id="before-26" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.348</span>
+  <span class="lead-duration duration">1.018</span>
 
           </div>
 
@@ -1344,7 +1408,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1356,14 +1420,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.556</span>
+  <span class="lead-duration duration">10.378</span>
 
   </div>
 
@@ -1388,7 +1452,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;aaa11a&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">3.734</span>
+  <span class="lead-duration duration">0.746</span>
 
   </div>
 
@@ -1413,7 +1477,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;aaa11a&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.862</span>
+  <span class="lead-duration duration">1.192</span>
 
   </div>
 
@@ -1438,7 +1502,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">10.134</span>
+  <span class="lead-duration duration">1.486</span>
 
   </div>
 
@@ -1463,7 +1527,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">deberia mostrar un mensaje de error &quot;firstname is invalid.&quot;</span>
   
-  <span class="lead-duration duration">0.076</span>
+  <span class="lead-duration duration">0.172</span>
 
   </div>
 
@@ -1488,7 +1552,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1500,13 +1564,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-24" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.153</span>
+  <span class="lead-duration duration">0.128</span>
 
           </div>
 
@@ -1532,10 +1596,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">9.335</span>
+  <span class="lead-duration duration">1.370</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1548,13 +1612,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-30">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1566,14 +1630,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-26" class="inner-level collapse collapsable-details ">
+  <div id="steps-30" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">9.335</span>
+  <span class="lead-duration duration">1.370</span>
 
   </div>
 
@@ -1611,10 +1675,10 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">22.104</span>
+  <span class="lead-duration duration">14.236</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1627,10 +1691,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-31" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1642,13 +1706,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-28" class="inner-level collapse collapsable-details ">
+    <div id="before-32" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.186</span>
+  <span class="lead-duration duration">1.117</span>
 
           </div>
 
@@ -1666,7 +1730,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1678,14 +1742,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details ">
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.615</span>
+  <span class="lead-duration duration">10.371</span>
 
   </div>
 
@@ -1710,7 +1774,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;111aaa&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">1.730</span>
+  <span class="lead-duration duration">0.754</span>
 
   </div>
 
@@ -1735,7 +1799,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;111aaa&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;11111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.582</span>
+  <span class="lead-duration duration">1.141</span>
 
   </div>
 
@@ -1760,7 +1824,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">8.091</span>
+  <span class="lead-duration duration">1.902</span>
 
   </div>
 
@@ -1785,7 +1849,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid.&quot;</span>
   
-  <span class="lead-duration duration">0.085</span>
+  <span class="lead-duration duration">0.067</span>
 
   </div>
 
@@ -1810,7 +1874,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1822,13 +1886,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-34" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.869</span>
+  <span class="lead-duration duration">0.160</span>
 
           </div>
 
@@ -1854,10 +1918,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">19.388</span>
+  <span class="lead-duration duration">2.401</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1870,13 +1934,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details ">
+  <div id="element-35" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1888,14 +1952,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-32" class="inner-level collapse collapsable-details ">
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">19.388</span>
+  <span class="lead-duration duration">2.401</span>
 
   </div>
 
@@ -1933,10 +1997,10 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">23.987</span>
+  <span class="lead-duration duration">14.119</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1949,10 +2013,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-37" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1964,13 +2028,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-34" class="inner-level collapse collapsable-details ">
+    <div id="before-38" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">2.095</span>
+  <span class="lead-duration duration">1.031</span>
 
           </div>
 
@@ -1988,7 +2052,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2000,14 +2064,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-35" class="inner-level collapse collapsable-details ">
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.574</span>
+  <span class="lead-duration duration">10.356</span>
 
   </div>
 
@@ -2032,7 +2096,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;Daniel&quot; &quot;Farias&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;20&quot; &quot;6&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">1.147</span>
+  <span class="lead-duration duration">0.724</span>
 
   </div>
 
@@ -2057,7 +2121,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;Daniel&quot; &quot;Farias&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;111&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.792</span>
+  <span class="lead-duration duration">1.148</span>
 
   </div>
 
@@ -2082,7 +2146,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">10.383</span>
+  <span class="lead-duration duration">1.823</span>
 
   </div>
 
@@ -2107,7 +2171,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">deberia mostrar un mensaje de error &quot;The Zip/Postal code you've entered is invalid. It must follow this format: 00000&quot;</span>
   
-  <span class="lead-duration duration">0.089</span>
+  <span class="lead-duration duration">0.067</span>
 
   </div>
 
@@ -2132,7 +2196,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2144,13 +2208,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-36" class="inner-level collapse collapsable-details ">
+    <div id="after-40" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.155</span>
+  <span class="lead-duration duration">0.139</span>
 
           </div>
 
@@ -2176,10 +2240,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">15.066</span>
+  <span class="lead-duration duration">1.093</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -2192,13 +2256,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-37" class="collapse collapsable-details ">
+  <div id="element-41" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2210,14 +2274,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-38" class="inner-level collapse collapsable-details ">
+  <div id="steps-42" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">El usuario esta en login page</span>
   
-  <span class="lead-duration duration">15.066</span>
+  <span class="lead-duration duration">1.093</span>
 
   </div>
 
@@ -2255,10 +2319,10 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">21.749</span>
+  <span class="lead-duration duration">13.856</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -2271,10 +2335,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-39" class="collapse collapsable-details ">
+  <div id="element-43" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2286,13 +2350,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-40" class="inner-level collapse collapsable-details ">
+    <div id="before-44" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">TestGlue.Hooks.setUp()</span>
                         
-  <span class="lead-duration duration">1.580</span>
+  <span class="lead-duration duration">0.810</span>
 
           </div>
 
@@ -2310,7 +2374,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-45">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2322,14 +2386,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-41" class="inner-level collapse collapsable-details ">
+  <div id="steps-45" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
   <span class="name">Ingresa a la pagina Create an account &quot;registro8@gmail.com&quot;</span>
   
-  <span class="lead-duration duration">10.531</span>
+  <span class="lead-duration duration">10.363</span>
 
   </div>
 
@@ -2354,7 +2418,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Ingresa los datos personales &quot;Mr.&quot; &quot;100kjj&quot; &quot;Aaa111&quot; &quot;registro8@gmail.com&quot; &quot;pass1&quot; &quot;31&quot; &quot;2&quot; &quot;2000&quot; &quot;yes&quot; &quot;no&quot;</span>
   
-  <span class="lead-duration duration">2.100</span>
+  <span class="lead-duration duration">0.728</span>
 
   </div>
 
@@ -2379,7 +2443,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Ingresa datos de domicilio &quot;100kjj&quot; &quot;Aaa111&quot; &quot;NA&quot; &quot;direccion11&quot; &quot;direccion12&quot; &quot;United States&quot; &quot;Arizona&quot; &quot;ciudad1&quot; &quot;a1&quot; &quot;infoAdicional1&quot; &quot;4444455214&quot; &quot;301211111&quot; &quot;alias1&quot;</span>
   
-  <span class="lead-duration duration">1.510</span>
+  <span class="lead-duration duration">1.176</span>
 
   </div>
 
@@ -2404,7 +2468,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">presiona el boton de registro</span>
   
-  <span class="lead-duration duration">7.527</span>
+  <span class="lead-duration duration">1.449</span>
 
   </div>
 
@@ -2429,7 +2493,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">deberia mostrar un mensaje de error &quot;lastname is invalid. firstname is invalid. The Zip/Postal code you've entered is invalid. It must follow this format: 00000 Invalid date of birth&quot;</span>
   
-  <span class="lead-duration duration">0.079</span>
+  <span class="lead-duration duration">0.138</span>
 
   </div>
 
@@ -2454,7 +2518,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-46">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2466,13 +2530,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-42" class="inner-level collapse collapsable-details ">
+    <div id="after-46" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">TestGlue.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">0.152</span>
+  <span class="lead-duration duration">0.127</span>
 
           </div>
 
